@@ -6,56 +6,45 @@
     <title>Candy Gallery</title>
     <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="lightbox.css">
 </head>
 <body>
-    <header>
-        <a href="./index.html"><img src="./Images/lollipop-logo.png" alt="Lollipop Logo" id="logo"></a>
+    <header class="header-main">
+        <div class="header-main-logo">
+            <img src="./Images/lollipop-logo.png" alt="Lollipop Logo Icon">
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
-            <h2>Welcome to the Candy Kingdom!</h2>
-            <p>Find the best candy for you today!</p>
+            <h1>Welcome to the Candy Kingdom!</h1>
+            <h3>Find the best candy for you today!</h3>
         </div>
     </section>
-    <section class="gallery">
-        <div class="gallery-container">
-            <div class="row">
-                <div class="column">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="column">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="column">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
-                <div class="column">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+    <main id="gallery">
+        <div class="row">
+            <div class="column">
+                <a href="./Images/candy-corn.jpg" data-lightbox="models" data-title="Tri-colored, waxy candy shaped like corn kernels popular at Halloween."><img src="./Images/candy-corn.jpg" alt="Candy Corn"></a>
+                <a href="./Images/hersheys.jpg" data-lightbox="models" data-title="Classic rectangular chocolate bars made by the iconic American chocolate company."><img src="./Images/hersheys.jpg" alt="Hershey Bars"></a>
+                <a href="./Images/kisses.jpg" data-lightbox="models" data-title=" Bite-sized, foil-wrapped milk chocolate pieces made by Hershey's."><img src="./Images/kisses.jpg" alt="Hershey Kisses"></a>
+            </div>
+            <div class="column">
+                <a href="./Images/kitkat.jpg" data-lightbox="models" data-title="Crispy wafers coated in milk chocolate and packaged in red wrappers by Nestle."><img src="./Images/kitkat.jpg" alt="KitKats"></a>
+                <a href="./Images/m&ms.jpg" data-lightbox="models" data-title="Colorful button-shaped chocolates with candy shells and chocolate centers made by Mars."><img src="./Images/m&ms.jpg" alt="M&Ms"></a>
+                <a href="./Images/nerds.jpg" data-lightbox="models" data-title="Small, crunchy, tart candies in bright colors that come in boxes divided by flavor."><img src="./Images/nerds.jpg" alt="Nerds"></a>
+            </div>
+            <div class="column">
+                <a href="./Images/skittles.jpg" data-lightbox="models" data-title="Chewy fruit-flavored candies with an S logo on each candy in a variety of bright colors."><img src="./Images/skittles.jpg" alt="Skittles"></a>
+                <a href="./Images/sour-patch.jpg" data-lightbox="models" data-title="Soft chewy candies with a sour coating and sweet center shaped like children."><img src="./Images/sour-patch.jpg" alt="Sour Patch Kids"></a>
+                <a href="./Images/starburst.jpg" data-lightbox="models" data-title="Chewy fruit-flavored square candies with a juicy texture and wrapped in colorful paper."><img src="./Images/starburst.jpg" alt="Starburst"></a>
             </div>
         </div>
-    </section>
-    <script src="gallery.js"></script>
+    </main>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
