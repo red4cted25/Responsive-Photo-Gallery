@@ -80,6 +80,10 @@ header {
     text-shadow: -2px 2px #faa1a1;
 }
 
+.hero-content h3 {
+    font-size: 1.75vw;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -104,16 +108,54 @@ header {
     height: 30%;
 }
 
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
+/* Mobile */
+@media (max-width: 500px) {
+    .header-main {
+        font-size: 85%;
     }
+    
+    .header-main img {
+        height: 90%
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content {
+        top: 50%;
+        left: 5%;
+        transform: none;
+    }
+
+    .hero-content h1 {
+        font-size: 6vw;
+    }
+
+    .hero-content h3 {
+        font-size: 5.5vw;
+    }
+
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
+/* Tablet */
+@media (min-width: 501px) and (max-width: 768px) {
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content {
+        top: 60%;
+        left: 5%;
+        transform: none;
+    }
+
+    .hero-content h1 {
+        font-size: 6vw;
+    }
+
+    .hero-content h3 {
+        font-size: 5.5vw;
     }
 }
